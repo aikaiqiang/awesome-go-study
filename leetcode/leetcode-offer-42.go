@@ -31,6 +31,7 @@ func max(a, b int) int {
 
 }
 
+// 数组知识点补充：
 func newArray() {
 	//创建数组(声明长度)
 	var array1 = [5]int{1, 2, 3}
