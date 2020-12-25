@@ -5,6 +5,7 @@ import (
 	"sync"
 )
 
+// Person struct
 type Person struct {
 	Money   int
 	rwMutex sync.RWMutex
@@ -25,7 +26,8 @@ func (p *Person) AddMoney(diff int) {
 	p.Money += diff
 }
 
-func main() {
+// 主函数
+func test() {
 	p := Person{Money: 100}
 	go func() {
 		p.AddMoney(1000)

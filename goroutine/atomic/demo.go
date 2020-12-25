@@ -6,11 +6,12 @@ import (
 	"sync/atomic"
 )
 
+// Person struct
 type Person struct {
 	Money int64
 }
 
-func main() {
+func runTest() {
 	runtime.GOMAXPROCS(1) //配置只使用一个物理核
 	p := Person{Money: 100}
 	go func() {
