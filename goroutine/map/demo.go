@@ -1,29 +1,29 @@
-package map
+package _map
 
 import "sync"
 
 // Golang 运行时明确禁止 map 的并发读写
 
 // func main() {
-	//m := make(map[int]int)
-	//go func() {
-	//	for {
-	//		_ = m[1]
-	//	}
-	//}()
-	//
-	//go func() {
-	//	for {
-	//		m[2] = 1
-	//	}
-	//
-	//}()
-	//
-	//select {
-	//
-	//}
+//m := make(map[int]int)
+//go func() {
+//	for {
+//		_ = m[1]
+//	}
+//}()
+//
+//go func() {
+//	for {
+//		m[2] = 1
+//	}
+//
+//}()
+//
+//select {
+//
+//}
 
-	// updateDemo()
+// updateDemo()
 // }
 
 func updateDemo() {
