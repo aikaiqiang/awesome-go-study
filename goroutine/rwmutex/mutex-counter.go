@@ -1,9 +1,7 @@
-package main
+package rwmutex
 
 import (
-	"fmt"
 	"sync"
-	"time"
 )
 
 // SafeCounter is safe to use concurrently.
@@ -28,12 +26,12 @@ func (c *SafeCounter) Value(key string) int {
 	return c.v[key]
 }
 
-func main() {
-	c := SafeCounter{v: make(map[string]int)}
-	for i := 0; i < 1000; i++ {
-		go c.Inc("somekey")
-	}
+// func main() {
+// 	c := SafeCounter{v: make(map[string]int)}
+// 	for i := 0; i < 1000; i++ {
+// 		go c.Inc("somekey")
+// 	}
 
-	time.Sleep(time.Second)
-	fmt.Println(c.Value("somekey"))
-}
+// 	time.Sleep(time.Second)
+// 	fmt.Println(c.Value("somekey"))
+// }

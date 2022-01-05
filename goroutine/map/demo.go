@@ -1,10 +1,10 @@
-package main
+package map
 
 import "sync"
 
 // Golang 运行时明确禁止 map 的并发读写
 
-func main() {
+// func main() {
 	//m := make(map[int]int)
 	//go func() {
 	//	for {
@@ -23,8 +23,8 @@ func main() {
 	//
 	//}
 
-	updateDemo()
-}
+	// updateDemo()
+// }
 
 func updateDemo() {
 	var counter = struct {
