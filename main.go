@@ -1,10 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/aikaiqiang/Algorithms-LeetCode-Go/kaywall"
+)
 
 const Pi = 3.1415926
 const MaxThread = 10
-const prefix = "astaxie_"
+const PREFIX = "astaxie_"
 
 const (
 	x = iota // x == 0
@@ -33,6 +37,12 @@ func SumAndProduct(A, B int) (int, int) {
 }
 
 func main() {
+	kaywall.Hello()
+
+	var a = 65
+	b := string(a)
+	fmt.Println("b值=", b)
+
 	var comp complex64 = 5 + 5i
 	fmt.Printf("Value is: %v\n", comp)
 
